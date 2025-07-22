@@ -3,21 +3,21 @@ import MotionGradientCircle from './MotionGradientCircle';
 
 const testimonials = [
   {
-    quote: 'The service helped me find the perfect match. Two clear benefits I gained are a good assessment of my needs and a pool of reliable potential talents.',
+    quote: 'Analytica delivered beyond expectations. Their expertise in AI and cloud made our transformation seamless.',
+    name: 'Victor Lagos',
+    title: 'CVO, Envolved Ecosystem',
+    img: 'https://media.licdn.com/dms/image/v2/D5603AQFzV1fXf9AX-A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720506078348?e=1756339200&v=beta&t=MDl3mgqj5_y47Q_KunZkL0qty3JCsY00CPWnpLXiUTM',
+    bg: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80', // AI, neural network
+  },
+  {
+    quote: 'Analytica transformed our workflow with advanced AI solutions. The seamless integration and expert guidance accelerated our project success.',
     name: 'Patrick Mills',
     title: 'CEO, PraxyNet',
     img: 'https://randomuser.me/api/portraits/men/32.jpg',
     bg: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1200&q=80', // Teamwork, collaboration
   },
   {
-    quote: 'Analytica delivered beyond expectations. Their expertise in AI and cloud made our transformation seamless.',
-    name: 'Sarah Lee',
-    title: 'CTO, FinEdge',
-    img: 'https://randomuser.me/api/portraits/women/44.jpg',
-    bg: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80', // AI, neural network
-  },
-  {
-    quote: 'We scaled our team quickly and efficiently. The process was smooth and the talent was top-notch.',
+    quote: 'With Analytica’s AI-driven approach, we scaled our team and leveraged cloud technologies to deliver innovative products faster than ever.',
     name: 'Alex Kim',
     title: 'Product Lead, InnovateX',
     img: 'https://randomuser.me/api/portraits/men/54.jpg',
