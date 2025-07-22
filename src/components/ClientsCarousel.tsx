@@ -1,4 +1,5 @@
 import React from 'react';
+import MotionGradientCircle from './MotionGradientCircle';
 
 const clientLogos = [
   {
@@ -39,7 +40,9 @@ const clientLogos = [
 ];
 
 const ClientsCarousel: React.FC = () => (
-  <section className="bg-gray-950 py-16" id="clients">
+  <section className="relative bg-gray-950 py-16 overflow-hidden" id="clients">
+    {/* Motion Gradient Circle Background */}
+    <MotionGradientCircle size={400} top="-60px" left="70%" zIndex={0} opacity={0.18} />
     <div className="max-w-6xl mx-auto px-4">
       <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-10">Trusted by forward-thinking teams</h2>
       <div className="flex flex-nowrap md:grid md:grid-cols-7 gap-6 overflow-x-auto md:overflow-visible pb-2 md:pb-0">

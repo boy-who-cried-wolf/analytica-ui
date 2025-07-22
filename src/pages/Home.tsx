@@ -14,11 +14,11 @@ const Home: React.FC = () => (
     <Header />
     <main className="flex-1 pt-16"> {/* pt-16 matches header height */}
       <HeroSection />
+      <ProcessSection />
       <ClientsCarousel />
       <ServicesSection />
       <TestimonialsSection />
       <FAQSection />
-      <ProcessSection />
       <CTASection />
     </main>
     <Footer />

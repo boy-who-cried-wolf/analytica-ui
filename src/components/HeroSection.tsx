@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import MotionGradientCircle from './MotionGradientCircle';
 
 const slides = [
   {
-    img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1600&q=80',
-    alt: 'Modern web design tools',
+    img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Modern office building',
     headline: 'Empowering Businesses Through Smart Technology',
     sub: 'IT Consulting | Software Development | Cloud & Data Solutions',
     desc: 'Your trusted partner for digital transformation, system integration, and scalable tech strategies.',
   },
   {
-    img: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80',
+    img: 'https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?auto=format&fit=crop&w=1600&q=80',
     alt: 'AI, neural network, futuristic',
     headline: 'Innovate with AI & Automation',
     sub: 'Machine Learning | Automation | Analytics',
     desc: 'Leverage the latest in AI and automation to drive efficiency and growth.',
   },
   {
-    img: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1600&q=80', // Teamwork, collaboration
+    img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=80', // Teamwork, collaboration
     alt: 'Teamwork, collaboration',
     headline: 'Build with Global Talent',
     sub: 'Team Extension | Offshore Experts',
@@ -42,6 +43,8 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950">
+      {/* Motion Gradient Circle Background */}
+      <MotionGradientCircle size={800} top="10%" left="60%" zIndex={0} opacity={0.22} />
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
@@ -63,7 +66,7 @@ const HeroSection: React.FC = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">{slides[index].headline}</h1>
         <h2 className="text-xl md:text-2xl text-blue-300 font-semibold mb-4">{slides[index].sub}</h2>
         <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-8">{slides[index].desc}</p>
-        <a href="https://cal.com/nirlep-mmf/60-minute-meeting" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 rounded-full bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg shadow-xl transition">Schedule a Call</a>
+        <a href="https://cal.com/nirlep-mmf/60-minute-meeting" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 rounded-full bg-secondary hover:bg-primary text-background font-bold text-lg shadow-xl transition">Schedule a Call</a>
       </div>
       {/* Arrows */}
       <button

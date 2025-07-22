@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MotionGradientCircle from './MotionGradientCircle';
 
 const testimonials = [
   {
@@ -9,7 +10,7 @@ const testimonials = [
     bg: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1200&q=80', // Teamwork, collaboration
   },
   {
-    quote: 'Mount Mindforce delivered beyond expectations. Their expertise in AI and cloud made our transformation seamless.',
+    quote: 'Analytica delivered beyond expectations. Their expertise in AI and cloud made our transformation seamless.',
     name: 'Sarah Lee',
     title: 'CTO, FinEdge',
     img: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -41,6 +42,8 @@ const TestimonialsSection: React.FC = () => {
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gray-950 py-20">
+      {/* Motion Gradient Circle Background */}
+      <MotionGradientCircle size={600} top="20%" left="30%" zIndex={0} opacity={0.18} />
       {/* Background */}
       {testimonials.map((t, i) => (
         <div
